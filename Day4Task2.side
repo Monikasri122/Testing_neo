@@ -1,0 +1,104 @@
+{
+  "id": "e723e0ad-593c-4551-8e4e-113029b00783",
+  "version": "2.0",
+  "name": "Day4",
+  "url": "https://demo.opencart.com/index.php?route=account/login&language=en-gb",
+  "tests": [{
+    "id": "e568f4e9-7626-4388-a2e2-07e9440da967",
+    "name": "Day4Task2",
+    "commands": [{
+      "id": "26eb5cf6-daab-4441-8548-cffc3dc3b9e1",
+      "comment": "",
+      "command": "open",
+      "target": "https://demo.opencart.com/index.php?route=account/login&language=en-gb",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "07ec0ea6-d734-4da7-a759-acf05d4befca",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "838x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "17b4b4fd-94b7-4d20-beeb-f662e0537e4f",
+      "comment": "",
+      "command": "click",
+      "target": "id=input-email",
+      "targets": [
+        ["id=input-email", "id"],
+        ["name=email", "name"],
+        ["css=#input-email", "css:finder"],
+        ["xpath=//input[@id='input-email']", "xpath:attributes"],
+        ["xpath=//form[@id='form-login']/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d80f9f7-091a-44a7-8150-586f67a4128a",
+      "comment": "",
+      "command": "type",
+      "target": "id=input-email",
+      "targets": [
+        ["id=input-email", "id"],
+        ["name=email", "name"],
+        ["css=#input-email", "css:finder"],
+        ["xpath=//input[@id='input-email']", "xpath:attributes"],
+        ["xpath=//form[@id='form-login']/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": "727821tuec122@skct.edu.in"
+    }, {
+      "id": "5c7a2693-1eea-41e3-a72a-3b2c7e2891bf",
+      "comment": "",
+      "command": "click",
+      "target": "id=input-password",
+      "targets": [
+        ["id=input-password", "id"],
+        ["name=password", "name"],
+        ["css=#input-password", "css:finder"],
+        ["xpath=//input[@id='input-password']", "xpath:attributes"],
+        ["xpath=//form[@id='form-login']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0aa5044c-7bca-4b62-b49d-ee719df4dd0a",
+      "comment": "",
+      "command": "type",
+      "target": "id=input-password",
+      "targets": [
+        ["id=input-password", "id"],
+        ["name=password", "name"],
+        ["css=#input-password", "css:finder"],
+        ["xpath=//input[@id='input-password']", "xpath:attributes"],
+        ["xpath=//form[@id='form-login']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "ruthra"
+    }, {
+      "id": "c803fc00-fd2b-4ac4-8756-e2fb9e8f357a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(5)",
+      "targets": [
+        ["css=.btn:nth-child(5)", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='form-login']/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "69c7a04c-9e6e-4c52-9ce0-9f7241db8e45",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e568f4e9-7626-4388-a2e2-07e9440da967"]
+  }],
+  "urls": ["https://demo.opencart.com/index.php?route=account/login&language=en-gb"],
+  "plugins": []
+}
